@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: Vue with Vite
 
 on:
   push:
@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: |
         npm install
-        npx webpack
+        npm run build
 
 
