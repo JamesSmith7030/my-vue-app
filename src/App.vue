@@ -15,6 +15,7 @@ import Post from './post.mdx'
   </div>
   <HelloWorld msg="Vite + Vue123" />
 
+  <el-button>我是 ElButton</el-button>
   <MDXProvider><Post /></MDXProvider>
 </template>
 
