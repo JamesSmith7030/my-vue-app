@@ -1,7 +1,14 @@
-<script setup>
+<script setup lang="jsx">
 import {MDXProvider} from '@mdx-js/vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Post from './post.mdx'
+import { ElCard, ElBadge, ElButton } from 'element-plus'
+
+const comp = { ElCard1() {
+  return (<span>Asdf</span>);
+}, ElBadge1() {
+  return (<span>WER</span>);
+}, ElBadge, ElButton }
 </script>
 
 <template>
@@ -16,6 +23,7 @@ import Post from './post.mdx'
   <HelloWorld msg="Vite + Vue123" />
 
   <el-button>我是 ElButton</el-button>
+  <MDXProvider :components="comp"><Post /></MDXProvider>
   <MDXProvider><Post /></MDXProvider>
 </template>
 
