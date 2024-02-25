@@ -1,5 +1,7 @@
 <script setup>
+import {MDXProvider} from '@mdx-js/vue'
 import HelloWorld from './components/HelloWorld.vue'
+import Post from './post.mdx'
 </script>
 
 <template>
@@ -11,7 +13,9 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue123" />
+
+  <MDXProvider><Post /></MDXProvider>
 </template>
 
 <style scoped>
