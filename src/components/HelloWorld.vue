@@ -14,6 +14,7 @@ function addCount() {
 
 <template>
   <h1>{{ msg }}</h1>
+  <h2> Github Actions 测试1 </h2>
 
   <div class="card">
     <button type="button" @click="addCount">count is {{ count }}</button>
